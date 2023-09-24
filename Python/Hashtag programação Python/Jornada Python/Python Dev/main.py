@@ -12,4 +12,4 @@ def gerenciar_mensagem(mensagem):
 def homepage():
     return render_template("index.html")
 
-socketio.run(app, host="192.168.100.8")
+socketio.run(app, host = 'localhost')
