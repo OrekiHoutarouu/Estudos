@@ -22,6 +22,7 @@ def contador(início, fim, passo):
             sleep(0.3)
         print()
         
+        
 contador(1, 10, 1)
 contador(10, 0, 2)
     
