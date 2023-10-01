@@ -7,7 +7,7 @@ def ajuda(comando):
     
 comando = ''
 print('='*50)
-print(f'{"Sistema de ajuda PyHelp":>36}')
+print('Sistema de ajuda PyHelp'.center(50))
 print('='*50)
 while True:
     comando = str(input('Função ou biblioteca (fim para parar): '))

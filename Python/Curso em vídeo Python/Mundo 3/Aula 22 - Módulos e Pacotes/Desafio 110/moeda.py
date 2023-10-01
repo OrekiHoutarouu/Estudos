@@ -43,7 +43,7 @@ def moeda(preço = 0, moeda = 'R$'):
 
 def resumo(preço = 0, porcentagemMais = 0, porcentagemMenos = 0):
     print('='*33)
-    print(f'{"RESUMO DOS VALORES":>25}')
+    print('RESUMO DOS VALORES'.center(33))
     print('='*33)
     
     print(f'Preço analisado: {moeda(preço):>13}')

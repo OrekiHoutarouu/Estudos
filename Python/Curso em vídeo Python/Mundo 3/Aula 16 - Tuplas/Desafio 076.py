@@ -9,7 +9,9 @@ produtosEPreços = ('Arroz', 4.63,
                   'Borracha', 1.50,
                   'Garrafa', 24.99)
 
-print(f'{"-"*50}\n{"LISTA DE VALORES":^50}\n{"-"*50}')
+print('='*50)
+print('LISTA DE VALORES'.center(50))
+print('='*50)
 
 for posição in range(0, len(produtosEPreços)):
     if posição % 2 == 0:

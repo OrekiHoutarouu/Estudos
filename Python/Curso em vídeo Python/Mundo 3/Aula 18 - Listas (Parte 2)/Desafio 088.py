@@ -4,14 +4,14 @@ números = []
 contador = 0
 
 print('=' * 40)
-print('               MEGA SENA')
+print('MEGA SENA'.center(40))
 print('=' * 40)
 print()
 
 jogos = int(input('Quantos jogos deseja sortear? '))
 
-print()
-print('JOGOS')
+print('='*40)
+print('JOGOS'.center(40))
 print()
 
 for aleatórios in range(jogos):
