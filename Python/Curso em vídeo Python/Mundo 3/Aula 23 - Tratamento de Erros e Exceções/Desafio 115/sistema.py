@@ -4,11 +4,8 @@ from time import sleep
 
 arquivo = 'pessoas.txt'
 
-if arquivoExiste(arquivo):
-    print('Arquivo encontrado com sucesso!')
-
-else:
-    print('Arquivo não encontrado.')
+if arquivoExiste(arquivo) == False:
+    criarArquivo(arquivo)
     
 while True:
     resposta = menu(['Ver pessoa(s) cadastrada(s)', 'Cadastrar nova pessoa', 'Sair do programa'])
@@ -17,10 +14,14 @@ while True:
         print('ERRO! Digite uma opção válida')
     
     elif resposta == 1:
-        cabeçalho(f'Opção {resposta}')
+        cabeçalho('PESSOAS CADASTRADAS')
+        lerArquivo(arquivo)
         
     elif resposta == 2:
-        cabeçalho(f'Opção {resposta}')
+        cabeçalho(f'NOVO CADASTRO')
+        nome = str(input('Nome: '))
+        idade = leiaInt('Idade: ')
+        cadastrar(arquivo, nome, idade)
         
     elif resposta == 3:
         cabeçalho('Saindo do programa...')
