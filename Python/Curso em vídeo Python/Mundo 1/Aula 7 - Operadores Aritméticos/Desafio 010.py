@@ -1,2 +1,3 @@
-d = float(input('Digite o total de dinheiro que deseja converter em dólares: '))
-print('Esse valor em dólar é {:.2f}'.format(d*5.15))
+dinheiro = float(input('Digite o total de dinheiro que deseja converter em dólares: R$'))
+
+print(f'Esse valor em dólar é {dinheiro * 5.15:.2f}.')

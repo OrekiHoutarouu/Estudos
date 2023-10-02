@@ -1,2 +1,3 @@
-nome=input('Qual o seu nome?')
-print('Bem-vindo(a)',nome)
+nome = str(input('Qual o seu nome? ')).strip()
+
+print(f'Bem-vindo(a) {nome}!')

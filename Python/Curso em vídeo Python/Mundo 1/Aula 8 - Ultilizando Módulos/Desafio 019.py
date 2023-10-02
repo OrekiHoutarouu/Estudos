@@ -1,7 +1,10 @@
 from random import choice
-a1 = str(input('Digite o nome do aluno 1: '))
-a2 = str(input('Digite o nome do aluno 2: '))
-a3 = str(input('Digite o nome do aluno 3: '))
-a4 = str(input('Digite o nome do aluno 4: '))
-ag = [a1, a2, a3, a4]
-print('O aluno escolhido foi {}'.format(choice(ag)))
+
+aluno1 = str(input('Digite o nome do aluno 1: ')).strip()
+aluno2 = str(input('Digite o nome do aluno 2: ')).strip()
+aluno3 = str(input('Digite o nome do aluno 3: ')).strip()
+aluno4 = str(input('Digite o nome do aluno 4: ')).strip()
+
+alunos = [aluno1, aluno2, aluno3, aluno4]
+
+print(f'O aluno escolhido foi {choice(alunos)}.')

@@ -1,4 +1,4 @@
-num1=int(input('Qual o primeiro número'))
-num2=int(input('Qual o segundo número'))
-s=num1+num2
-print('O resultado da soma é',s)
+número1 = int(input('Qual o primeiro número? '))
+número2 = int(input('Qual o segundo número? '))
+
+print(f'O resultado da soma é {número1 + número2:.2f}.')

@@ -1,2 +1,3 @@
-m = float(input('Digite a metragem de algo: '))
-print('Essa metragem em centímetros é igual a {} e em milímetros é igual a {}'.format(m*100,m*1000))
+metragem = float(input('Digite a metragem de algo: '))
+
+print(f'Essa metragem em centímetros é igual a {metragem * 100:.2f} e em milímetros é igual a {metragem * 1000:.2f}.')

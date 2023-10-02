@@ -1,3 +1,5 @@
 from math import (sin, cos, tan, radians)
-a = float(input('Digite o valor do ângulo: '))
-print('O seno desse ângulo é {:.2f}, o cosseno é {:.2f} e o tangente é {:.2f}'.format(sin(radians(a)), cos(radians(a)), tan(radians(a))))
+
+ângulo = float(input('Digite o valor do ângulo: '))
+
+print(f'O seno desse ângulo é {sin(radians(ângulo)):.2f}, o cosseno é {cos(radians(ângulo)):.2f} e o tangente é {tan(radians(ângulo)):.2f}.')

@@ -1,2 +1,3 @@
-c = float(input('Digite a temperatura em graus Celsius: '))
-print('Essa temperatura corresponde a {}°F!'.format(9*c/5+32))
+temperatura = float(input('Digite a temperatura em graus Celsius: '))
+
+print(f'Essa temperatura corresponde a {9 * temperatura / 5 + 32:.2f}°F!')
