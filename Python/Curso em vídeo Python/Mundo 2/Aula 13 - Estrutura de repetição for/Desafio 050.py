@@ -1,6 +1,9 @@
-s = 0
+soma = 0
+
 for c in range(1, 7):
-    ns = int(input('Digite um valor: '))
-    if ns % 2 == 0:
-        s = s + ns
-print(f'A soma de todos os núemros pares digitados foi de {s} (números ímpares não foram considerados)')
+    numero = int(input('Digite um valor: '))
+    
+    if numero % 2 == 0:
+        soma += numero
+        
+print(f'A soma de todos os números pares digitados foi de {soma}.')
