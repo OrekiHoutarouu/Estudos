@@ -1,10 +1,10 @@
-número1 = int(input('Digite um valor inteiro: '))
-número2 = int(input('Digite outro valor inteiro: '))
+numero1 = int(input('Digite um valor inteiro: '))
+numero2 = int(input('Digite outro valor inteiro: '))
 
-if número1 > número2:
+if numero1 > numero2:
     print('O primeiro valor digitado é maior.')
     
-elif número2 > número1:
+elif numero2 > numero1:
     print('O segundo valor digitado é maior.')
      
 else:
