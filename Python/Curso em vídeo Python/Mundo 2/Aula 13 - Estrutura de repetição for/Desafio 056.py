@@ -1,21 +1,27 @@
-ida = 0
-mh = 0
-nhv = ''
-mn = 0
-for c in range(1, 5):
-    print(f'{"-"*5} {c}° Pessoa {"-"*5}')
-    n = str(input('Nome: ')).strip()
-    i = int(input('Idade: '))
-    s = str(input('Sexo (M ou F): ')).upper().strip()
-    ida += i
-    if c == 1 and s == 'M':
-        mh = i
-        nhv = n
-    if s == 'M' and i > mh:
-        mh = i
-        nhv = n
-    if s == 'F' and i < 20:
-        mn += 1
-print(f'A média de idade das pessoas digitadas é de: {(ida)/4:.1f}')
-print(f'O nome do homem mais velho da lista é {nhv} e ele tem {mh} ano(s).')
-print(f'Existem {mn} mulher(es) que tem menos de 20 anos nessa lista.')
+idadeMedia = 0
+idadeHomemVelho = 0
+nomeHomemVelho = ''
+numeroMulheresMaiorDeVinte = 0
+
+for contador in range(1, 5):
+    print(f'{"-"*5} {contador}° Pessoa {"-"*5}')
+    
+    nome = str(input('Nome: ')).strip()
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo (M ou F): ')).upper().strip()
+    idadeMedia += idade
+    
+    if contador == 1 and sexo == 'M':
+        idadeHomemVelho = idade
+        nomeHomemVelho = nome
+        
+    if sexo == 'M' and idade > idadeHomemVelho:
+        idadeHomemVelho = idade
+        nomeHomemVelho = nome
+        
+    if sexo == 'F' and idade < 20:
+        numeroMulheresMaiorDeVinte += 1
+        
+print(f'A média de idade das pessoas digitadas é de: {(idadeMedia)/4:.1f}.')
+print(f'O nome do homem mais velho da lista é {nomeHomemVelho} e ele tem {idadeHomemVelho} ano(s).')
+print(f'Existem {numeroMulheresMaiorDeVinte} mulher(es) que tem menos de 20 anos nessa lista.')

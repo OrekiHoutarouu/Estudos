@@ -1,10 +1,16 @@
-qt = int(input('Quantos termos da sequência de Fibonnaci deseja saber? '))
-print(f'{"-"*5} A sequência de Fibonnaci é {"-"*5}')
-con = num = ant = pen = 1
+quantidadeTermos = int(input('Quantos termos da sequência de Fibonnaci deseja saber? '))
+
+print('='*50)
+print('SEQUÊNCIA DE FIBONNACI'.center(50))
+print('='*50)
+
+contador = numero = antepenultimo = penultimo = 1
 print('O 1° termo da sequência de Fibonnaci é 1')
-while con != qt:
-    print(f'O {con + 1}° termo da sequência de Fibonacci é {num}')
-    con += 1 
-    num = pen + ant
-    pen = ant
-    ant = num
+
+while contador != quantidadeTermos:
+    print(f'O {contador + 1}° termo da sequência de Fibonacci é {numero}.')
+    
+    contador += 1 
+    numero = penultimo + antepenultimo
+    penultimo = antepenultimo
+    antepenultimo = numero

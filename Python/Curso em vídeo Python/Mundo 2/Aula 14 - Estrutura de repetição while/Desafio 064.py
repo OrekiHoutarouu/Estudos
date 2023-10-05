@@ -1,6 +1,8 @@
-n = c = r = 0
-while n != 999:
-    n = int(input('Digite um número para saber sua soma com o próximo número, digite 999 para encerrar o programa: '))
-    r += n
-    c += 1
-print(f'Você digitou {c - 1} números e a soma entre eles é de {r - 999}')
+numero = contador = soma = 0
+
+while numero != 999:
+    numero = int(input('Digite um número para saber sua soma com o próximo número, digite 999 para encerrar o programa: '))
+    soma += numero
+    contador += 1
+    
+print(f'Você digitou {contador - 1} números e a soma entre eles é de {soma - 999}.')
