@@ -1,4 +1,4 @@
-produtosEPreços = ('Arroz', 4.63, 
+produtosEPrecos = ('Arroz', 4.63, 
                   'Feijão', 5.66,
                   'Nescau', 13.28,
                   'Mouse Gamer', 137.88,
@@ -13,8 +13,8 @@ print('='*50)
 print('LISTA DE VALORES'.center(50))
 print('='*50)
 
-for posição in range(0, len(produtosEPreços)):
-    if posição % 2 == 0:
-        print(f'{produtosEPreços[posição]:.<30}',end='')
+for posicao in range(0, len(produtosEPrecos)):
+    if posicao % 2 == 0:
+        print(f'{produtosEPrecos[posicao]:.<30}',end='')
     else:
-        print(f'R${produtosEPreços[posição]:>8.2f}')
+        print(f'R${produtosEPrecos[posicao]:>8.2f}')

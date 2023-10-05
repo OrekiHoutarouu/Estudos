@@ -16,7 +16,7 @@ while True:
         
     else:
         if totalCedulas > 0:
-            print(f'Total de {totalCedulas} cédula(s) de R${cedulaAtual}')
+            print(f'Total de {totalCedulas} cédula(s) de R${cedulaAtual}.')
             
         if cedulaAtual == 50:
             cedulaAtual = 20
