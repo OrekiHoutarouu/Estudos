@@ -37,4 +37,5 @@ while True:
         else:
             print('Você perdeu para mim! HAHAHA!')
             break
+        
 print(f'Você ganhou de mim {contadorVitorias} vez(es)!')

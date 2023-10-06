@@ -19,4 +19,5 @@ if condicaoPagamento == 2:
         
     elif parcelado == 2:
         quantidadeParcelas = int(input(f'Em quantas vezes deseja parcelar o produto? '))
+        
         print(f'O preço do produto vai ser de R${precoNormal+(precoNormal*(20/100)):.2f}\nCom {quantidadeParcelas} parcelas de R${(precoNormal+(precoNormal*(20/100)))/quantidadeParcelas:.2f}.')
