@@ -1,11 +1,11 @@
 valores = []
 
 while True:
-    números = (int(input('Digite um valor: ')))
+    numeros = (int(input('Digite um valor: ')))
     
-    if números not in valores:
-        valores.append(números)
-        print('Número adicionado')
+    if numeros not in valores:
+        valores.append(numeros)
+        print('Número adicionado!')
         
     else:
         print('Número repetido, digite outro.')
@@ -16,5 +16,6 @@ while True:
     
 print('A lista com números não repetidos e em ordem crescente foi: ', end='')
 valores.sort()
+
 for lista in valores:
     print(f'{lista}', end=' ')

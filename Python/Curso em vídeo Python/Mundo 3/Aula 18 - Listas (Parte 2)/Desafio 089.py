@@ -17,10 +17,10 @@ while True:
 print('=' * 60)
 print(f'{"No.":<4}{"Nome":<10}{"Média":>8}')
 
-for contador, informações in enumerate(alunos):
+for contador, informacoes in enumerate(alunos):
     print(f'{contador:<1}', end='   ')
-    print(f'{informações[0]:<2}', end='')
-    print(f'{informações[3]:>14.1f}')
+    print(f'{informacoes[0]:<2}', end='')
+    print(f'{informacoes[3]:>14.1f}')
     
 notas = 0
 

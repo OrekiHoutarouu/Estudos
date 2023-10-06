@@ -26,7 +26,7 @@ while True:
 
 print('='*60)
 
-print(f'Foram cadastradas {len(pessoas)} pessoas')
+print(f'Foram cadastradas {len(pessoas)} pessoas.')
 print(f'O menor peso registrado foi {menorPeso}kg, de ', end='')
         
 for nome in pessoas:

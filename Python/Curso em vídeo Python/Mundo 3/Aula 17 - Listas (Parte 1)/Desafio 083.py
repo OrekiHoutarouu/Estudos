@@ -1,14 +1,15 @@
-expressão = str(input('Digite a expressão numérica: '))
+expressao = str(input('Digite a expressão numérica: '))
 
 pilha = []
 
-for símbolo in expressão:
-    if símbolo == '(':
+for simbolo in expressao:
+    if simbolo == '(':
         pilha.append('(')
         
-    elif símbolo == ')':
+    elif simbolo == ')':
         if len(pilha) > 0:
             pilha.pop()
+            
         else:
             pilha.append(')')
             break

@@ -16,5 +16,6 @@ print('='*50)
 for posicao in range(0, len(produtosEPrecos)):
     if posicao % 2 == 0:
         print(f'{produtosEPrecos[posicao]:.<30}',end='')
+        
     else:
         print(f'R${produtosEPrecos[posicao]:>8.2f}')

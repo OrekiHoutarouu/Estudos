@@ -13,7 +13,7 @@ for linha in range(0,3):
         print(f'[{matriz[linha][coluna]:^5}]', end='')
         
         if matriz[linha][coluna] % 2 == 0:
-            somaDosPares += matriz[linha][coluna]
+            somaDosPares += matriz[linha][coluna]      
             
     print()
             
@@ -27,7 +27,9 @@ for coluna in range(0,3):
     
     if coluna == 0:
         maiorDaSegundaLinha = matriz[1][coluna]
+        
     elif matriz[1][coluna] > maiorDaSegundaLinha:
         maiorDaSegundaLinha = matriz[1][coluna]
+        
         
 print(f'O maior dígito da segunda linha é {maiorDaSegundaLinha}')

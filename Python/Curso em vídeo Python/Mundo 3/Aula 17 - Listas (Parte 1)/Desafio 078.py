@@ -7,11 +7,11 @@ for lista in valores:
     print(lista, end=' ')
     
 print(f'\nO maior número digitado foi {max(valores)}. Na(s) posição(ões): ', end='')
-for índice, valor in enumerate(valores):
+for indice, valor in enumerate(valores):
     if valor == max(valores):
-        print(f'{índice + 1} ', end='')
+        print(f'{indice + 1} ', end='')
         
 print(f'\nE o menor valor digitado foi {min(valores)}. Na(s) posição(ões): ', end='')
-for índice, valor in enumerate(valores):
+for indice, valor in enumerate(valores):
     if valor == min(valores):
-        print(f'{índice + 1} ', end='')
+        print(f'{indice + 1} ', end='')

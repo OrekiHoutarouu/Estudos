@@ -8,15 +8,17 @@ for contador in range(0,5):
         print('Adicionado ao final da lista.')
         
     else:
-        posição = 0
-        while posição < len(valores):
-            if valor <= valores[posição]:
-                valores.insert(posição, valor)
-                print(f'Adicionado na posição {posição + 1} da lista.')
+        posicao = 0
+        
+        while posicao < len(valores):
+            if valor <= valores[posicao]:
+                valores.insert(posicao, valor)
+                
+                print(f'Adicionado na posição {posicao + 1} da lista.')
                 break
             
-            posição += 1
+            posicao += 1
 
 print('Os valores digitados em orgem crescente foram: ', end='')
-for números in valores:
-    print(f'{números} ', end='')   
+for numero in valores:
+    print(f'{numero} ', end='')   
