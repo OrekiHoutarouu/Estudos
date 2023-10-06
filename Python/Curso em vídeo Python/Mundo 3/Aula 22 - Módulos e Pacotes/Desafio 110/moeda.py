@@ -1,53 +1,53 @@
-def dobro(preço = 0, formatar = False):
-    preço *= 2
+def dobro(preco = 0, formatar = False):
+    preco *= 2
     
     if formatar == False:
-        return preço
+        return preco
     
     else:
-        return moeda(preço)
+        return moeda(preco)
 
 
-def metade(preço = 0, formatar = False):
-    preço /= 2
+def metade(preco = 0, formatar = False):
+    preco /= 2
     
     if formatar == False:
-        return preço
+        return preco
     
     else:
-        return moeda(preço)
+        return moeda(preco)
 
 
-def aumentar(preço = 0, porcentagem = 0, formatar = False):
-    preço = preço + (preço * (porcentagem / 100))
+def aumentar(preco = 0, porcentagem = 0, formatar = False):
+    preco = preco + (preco * (porcentagem / 100))
     
     if formatar == False:
-        return preço
+        return preco
     
     else:
-        return moeda(preço)
+        return moeda(preco)
 
 
-def diminuir(preço = 0, porcentagem = 0, formatar = False):
-    preço = preço - (preço * (porcentagem / 100))
+def diminuir(preco = 0, porcentagem = 0, formatar = False):
+    preco = preco - (preco * (porcentagem / 100))
     
     if formatar == False:
-        return preço
+        return preco
     
     else:
-        return moeda(preço)
+        return moeda(preco)
 
 
-def moeda(preço = 0, moeda = 'R$'):
-    return f'{moeda}{preço:.2f}'.replace('.', ',')
+def moeda(preco = 0, moeda = 'R$'):
+    return f'{moeda}{preco:.2f}'.replace('.', ',')
 
-def resumo(preço = 0, porcentagemMais = 0, porcentagemMenos = 0):
+def resumo(preco = 0, porcentagemMais = 0, porcentagemMenos = 0):
     print('='*33)
     print('RESUMO DOS VALORES'.center(33))
     print('='*33)
     
-    print(f'Preço analisado: \t{moeda(preço)}')
-    print(f'Dobro do preço: \t{dobro(preço, True)}')
-    print(f'Metade do preço: \t{metade(preço, True)}')
-    print(f'{porcentagemMais}% de aumento: \t{aumentar(preço, porcentagemMais, True)}')
-    print(f'{porcentagemMenos}% de redução: \t{diminuir(preço, porcentagemMenos, True)}')
+    print(f'Preço analisado: \t{moeda(preco)}')
+    print(f'Dobro do preco: \t{dobro(preco, True)}')
+    print(f'Metade do preco: \t{metade(preco, True)}')
+    print(f'{porcentagemMais}% de aumento: \t{aumentar(preco, porcentagemMais, True)}')
+    print(f'{porcentagemMenos}% de redução: \t{diminuir(preco, porcentagemMenos, True)}')

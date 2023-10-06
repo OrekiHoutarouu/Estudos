@@ -17,11 +17,11 @@ for linha in range(0,3):
             
     print()
             
-print(f'A soma dos dígitos pares é igual a {somaDosPares}')
+print(f'A soma dos dígitos pares é igual a {somaDosPares}.')
 
 for linha in range(0,3):
     somaDaTerceiraColuna += matriz[linha][2]
-print(f'A soma dos dígitos da terceira coluna é igual a {somaDaTerceiraColuna}')
+print(f'A soma dos dígitos da terceira coluna é igual a {somaDaTerceiraColuna}.')
 
 for coluna in range(0,3):
     
@@ -32,4 +32,4 @@ for coluna in range(0,3):
         maiorDaSegundaLinha = matriz[1][coluna]
         
         
-print(f'O maior dígito da segunda linha é {maiorDaSegundaLinha}')
+print(f'O maior dígito da segunda linha é {maiorDaSegundaLinha}.')

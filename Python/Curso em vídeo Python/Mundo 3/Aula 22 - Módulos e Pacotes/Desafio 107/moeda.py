@@ -1,18 +1,18 @@
-def dobro(preço):
-    preço *= 2
-    return preço
+def dobro(preco):
+    preco *= 2
+    return preco
 
 
-def metade(preço):
-    preço /= 2
-    return preço
+def metade(preco):
+    preco /= 2
+    return preco
 
 
-def aumentar(preço, porcentagem):
-    preço = preço + (preço * (porcentagem / 100))
-    return preço
+def aumentar(preco, porcentagem):
+    preco = preco + (preco * (porcentagem / 100))
+    return preco
 
 
-def diminuir(preço, porcentagem):
-    preço = preço - (preço * (porcentagem / 100))
-    return preço
+def diminuir(preco, porcentagem):
+    preco = preco - (preco * (porcentagem / 100))
+    return preco

@@ -1,11 +1,11 @@
-def fatorial(número, show = 0):
+def fatorial(numero, show = 0):
     """
     Calcula o fatorial de algum número
     :parâmetro número: Número que vai ser calculado o fatorial
     :parâmetro show: Mostra ou não a conta
     :retorno: Retorno do valor do fatorial
     """
-    contador = número
+    contador = numero
     fatorial = 1
     
     if show == True:

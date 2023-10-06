@@ -1,22 +1,22 @@
-def dobro(preço = 0):
-    preço *= 2
-    return preço
+def dobro(preco = 0):
+    preco *= 2
+    return preco
 
 
-def metade(preço = 0):
-    preço /= 2
-    return preço
+def metade(preco = 0):
+    preco /= 2
+    return preco
 
 
-def aumentar(preço = 0, porcentagem = 0):
-    preço = preço + (preço * (porcentagem / 100))
-    return preço
+def aumentar(preco = 0, porcentagem = 0):
+    preco = preco + (preco * (porcentagem / 100))
+    return preco
 
 
-def diminuir(preço = 0, porcentagem = 0):
-    preço = preço - (preço * (porcentagem / 100))
-    return preço
+def diminuir(preco = 0, porcentagem = 0):
+    preco = preco - (preco * (porcentagem / 100))
+    return preco
 
 
-def moeda(preço = 0, moeda = 'R$'):
-    return f'{moeda}{preço:.2f}'.replace('.', ',')
+def moeda(preco = 0, moeda = 'R$'):
+    return f'{moeda}{preco:.2f}'.replace('.', ',')

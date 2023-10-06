@@ -1,12 +1,12 @@
 def leiaDinheiro(mensagem):
-    válido = False
+    valido = False
     
-    while not válido:
-        preçoParaValidar = str(input(mensagem)).replace(',','.').strip()
+    while not valido:
+        precoParaValidar = str(input(mensagem)).replace(',','.').strip()
         
-        if preçoParaValidar.isalpha() or preçoParaValidar == '':
-            print(f'ERRO! "{preçoParaValidar}" é um preço inválido.')
+        if precoParaValidar.isalpha() or precoParaValidar == '':
+            print(f'ERRO! "{precoParaValidar}" é um preço inválido.')
             
         else:
-            válido = True
-            return float(preçoParaValidar)
+            valido = True
+            return float(precoParaValidar)

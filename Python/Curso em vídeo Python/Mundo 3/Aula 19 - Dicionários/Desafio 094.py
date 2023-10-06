@@ -31,7 +31,7 @@ while True:
     if continuar in 'N':
         break
     
-print('='*60)
+print('='*50)
 
 print(f'Ao todo, temos {len(listaDePessoas)} pessoa(s) cadastrada(s).')
 print(f'A média de idade do(a)(s) cadastrado(a)(s) é de {somaDasIdades / len(listaDePessoas):.2f}')
@@ -43,8 +43,8 @@ for mulheres in listaDePessoas:
 
 print('\nA(s) pessoa(s) acima da média de idade foi(ram):')
 
-for acimaDaMédia in listaDePessoas:
-    if acimaDaMédia['Idade'] > (somaDasIdades / len(listaDePessoas)):
-        for chave, valor in acimaDaMédia.items():
+for acimaDaMedia in listaDePessoas:
+    if acimaDaMedia['Idade'] > (somaDasIdades / len(listaDePessoas)):
+        for chave, valor in acimaDaMedia.items():
             print(f'{chave} = {valor}; ', end='')
         print()

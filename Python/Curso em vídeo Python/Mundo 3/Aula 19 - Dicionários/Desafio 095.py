@@ -29,9 +29,9 @@ while True:
     if continuar in 'N':
         break
 
-print('=' * 50)
+print('='*50)
 print(f'{"No.":<5}{"Nome":<10}{"Gols":<20}{"Total":<30}')
-print('=' * 50)
+print('='*50)
 
 for chave, valor in enumerate(time):
     print(f'{chave:<5}', end='')
@@ -39,17 +39,17 @@ for chave, valor in enumerate(time):
     print(f'{valor["Gols"]}', end='')
     print(f'{valor["Total"]:>18}') 
     
-print('=' * 50)
+print('='*50)
 
-númeroDoJogador = 0
+numeroDoJogador = 0
   
-while númeroDoJogador != 999:
-    númeroDoJogador = int(input('Deseja ver as informações de qual jogador? (999 interrompe): '))
+while numeroDoJogador != 999:
+    numeroDoJogador = int(input('Deseja ver as informações de qual jogador? (999 interrompe): '))
     
-    if númeroDoJogador >= len(time):
+    if numeroDoJogador >= len(time):
         print('Valor inválido, digite o valor numérico correspondente a algum jogador.')
         
     else:
-        print(f'Levantamento do jogador {time[númeroDoJogador]["Nome"]}')
-        for chave, valor in enumerate(time[númeroDoJogador]['Gols']):
+        print(f'Levantamento do jogador {time[numeroDoJogador]["Nome"]}')
+        for chave, valor in enumerate(time[numeroDoJogador]['Gols']):
             print(f'No jogo {chave}, fez {valor} gols.')

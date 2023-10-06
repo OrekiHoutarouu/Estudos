@@ -14,17 +14,17 @@ while True:
         print('ERRO! Digite uma opção válida')
     
     elif resposta == 1:
-        cabeçalho('PESSOAS CADASTRADAS')
+        cabecalho('PESSOAS CADASTRADAS')
         lerArquivo(arquivo)
         
     elif resposta == 2:
-        cabeçalho(f'NOVO CADASTRO')
+        cabecalho(f'NOVO CADASTRO')
         nome = str(input('Nome: '))
         idade = leiaInt('Idade: ')
         cadastrar(arquivo, nome, idade)
         
     elif resposta == 3:
-        cabeçalho('Saindo do programa...')
+        cabecalho('Saindo do programa...')
         break
     
     sleep(2)

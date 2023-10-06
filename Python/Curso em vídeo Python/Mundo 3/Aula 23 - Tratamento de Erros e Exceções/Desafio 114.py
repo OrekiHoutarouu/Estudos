@@ -6,5 +6,6 @@ try:
     
 except:
     print('O site pudim.com.br não está acessível no momento')
+    
 else:
     print('O site pudim.com.br está acessível no momento')

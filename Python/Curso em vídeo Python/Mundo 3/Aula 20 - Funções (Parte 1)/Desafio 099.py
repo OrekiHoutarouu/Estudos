@@ -1,21 +1,21 @@
 from time import sleep
 
-def maior(*números):
+def maior(*numeros):
     print('='*50)
     
     print(f'Analisando os valores', end=' ')
     
-    for valores in números:
+    for valores in numeros:
         print(f'{valores}', end=' ')
         sleep(0.3)
         
-    print(f'\nForam informados {len(números)} valores.')
+    print(f'\nForam informados {len(numeros)} valores.')
     
-    if len(números) == 0:
+    if len(numeros) == 0:
         print('O maior valor informado foi 0')
         
     else:
-        print(f'O maior valor informado foi {max(números)}.')
+        print(f'O maior valor informado foi {max(numeros)}.')
     
     
     

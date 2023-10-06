@@ -1,31 +1,31 @@
 from random import randint
 
-números = []
+numeros = []
 
 def sorteia():
     print('Sorteando 5 valores aleatórios:', end=' ')
    
-    for aleatórios in range(0,5):
-        números.append(randint(0,10))
+    for aleatorios in range(0,5):
+        numeros.append(randint(0,10))
         
-    for aleatórios in números:
-        print(f'{aleatórios}', end='')
+    for aleatorios in numeros:
+        print(f'{aleatorios}', end='')
         
-def somaPar(números):
-    númerosPares = 0
+def somaPar(numeros):
+    numerosPares = 0
     print('\nSomando os valores pares de ',end ='')
     
-    for valores in números:
+    for valores in numeros:
         print(f'{valores}', end=' ')
         
     print('...')
     
-    for valores in números:
+    for valores in numeros:
         if valores % 2 == 0:
-            númerosPares += valores
+            numerosPares += valores
             
-    print(f'{númerosPares}')
+    print(f'{numerosPares}')
     
     
 sorteia()
-somaPar(números)
+somaPar(numeros)

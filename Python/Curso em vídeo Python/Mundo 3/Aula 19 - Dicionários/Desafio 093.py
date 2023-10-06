@@ -10,7 +10,7 @@ for golsNaPartida in range(partidas):
 jogador['Gols'] = gols[:]
 jogador['Total'] = sum(gols)
 
-print('='*60)
+print('='*50)
 print(f'O jogador {jogador["Nome"]} jogou {partidas} partidas.')
 
 for chave, valor in enumerate(jogador['Gols']):

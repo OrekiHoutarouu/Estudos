@@ -1,28 +1,28 @@
-def notas(*notas, situação = False):
+def notas(*notas, situacao = False):
     """
     Analisador de notas e situações de alunos.
     :parâmetro notas: Uma ou mais notas de alunos
-    :parâmetro situação: Situação do aluno, opcional
+    :parâmetro situação o: Situação do aluno, opcional
     :retorno: Dicionário com informações dos alunos
     """
-    informações = {}
-    informações['Total'] = len(notas)
-    informações['Maior'] = max(notas)
-    informações['Menor'] = min(notas)
-    informações['Média'] = sum(notas) / len(notas)
+    informacoes = {}
+    informacoes['Total'] = len(notas)
+    informacoes['Maior'] = max(notas)
+    informacoes['Menor'] = min(notas)
+    informacoes['Média'] = sum(notas) / len(notas)
     
-    if situação == True:
-        if informações['Média'] < 5:
-            informações['Situação'] = 'Ruim'
+    if situacao == True:
+        if informacoes['Média'] < 5:
+            informacoes['Situação'] = 'Ruim'
         
-        elif informações['Média'] >= 5 and informações['Média'] < 7:
-            informações['Situação'] = 'Razoável'
+        elif informacoes['Média'] >= 5 and informacoes['Média'] < 7:
+            informacoes['Situação'] = 'Razoável'
             
         else:
-            informações['Situação'] = 'Boa'
+            informacoes['Situação'] = 'Boa'
             
-    return informações
+    return informacoes
    
     
-resposta = notas(9, 10, 5.5, 2.5, 8.5, situação=True)
+resposta = notas(9, 10, 5.5, 2.5, 8.5, situacao=True)
 print(resposta)

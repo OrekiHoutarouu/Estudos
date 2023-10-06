@@ -3,16 +3,16 @@ conjuntoDeNumeros = []
 numeros = []
 contador = 0
 
-print('=' * 40)
-print('MEGA SENA'.center(40))
-print('=' * 40)
+print('='*50)
+print('MEGA SENA'.center(50))
+print('='*50)
 print()
 
 jogos = int(input('Quantos jogos deseja sortear? '))
 
-print('='*40)
-print('JOGOS'.center(40))
-print()
+print('='*50)
+print('JOGOS'.center(50))
+print('='*50)
 
 for aleatorios in range(jogos):
     

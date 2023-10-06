@@ -1,5 +1,5 @@
 def leiaInt(mensagem):
-    ok = False
+    válido = False
     valor = 0
     
     while True:
@@ -7,12 +7,12 @@ def leiaInt(mensagem):
         
         if número.isnumeric():
             valor = int(número)
-            ok = True
+            válido = True
         
         else:
             print('Erro, por favor digite um valor numérico inteiro válido.')
         
-        if ok == True:
+        if válido == True:
             break
     
     return valor

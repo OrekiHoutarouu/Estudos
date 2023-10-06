@@ -20,7 +20,7 @@ ranking = sorted(valoresSorteados.items(), key = itemgetter(1), reverse = True)
 
 print('='*33)
 print('Ranking'.center(33))
-print()
+print('='*33)
 
 for índice, valor in enumerate(ranking):
     print(f'{índice + 1}° lugar: {valor[0]} com {valor[1]} no dado')
