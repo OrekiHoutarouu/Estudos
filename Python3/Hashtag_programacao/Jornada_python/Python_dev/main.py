@@ -8,8 +8,10 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 def gerenciar_mensagem(mensagem):
     send(mensagem, broadcast=True)
 
+
 @app.route("/")
 def homepage():
     return render_template("index.html")
+
 
 socketio.run(app, host = 'localhost')
