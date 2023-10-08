@@ -1,4 +1,3 @@
-import moeda
-
+import Moeda
 preco = float(input('Digite um valor: R$'))
-moeda.resumo(preco, 20, 12)
+Moeda.resumo(preco, 20, 12)
