@@ -1,5 +1,5 @@
-from lib.arquivo import *
-from lib.interface import *
+from lib.Arquivo import *
+from lib.Interface import *
 from time import sleep
 
 arquivo = 'pessoas.txt'

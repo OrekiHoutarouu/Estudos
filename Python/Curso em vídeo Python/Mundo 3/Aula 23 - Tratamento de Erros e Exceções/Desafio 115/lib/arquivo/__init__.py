@@ -23,7 +23,7 @@ def criarArquivo(nome):
         
     
 def lerArquivo(nome):
-    from lib.interface import cabeçalho
+    from lib.Interface import cabecalho
     
     try:
         arquivo = open(nome, 'rt', encoding = 'utf-8')
