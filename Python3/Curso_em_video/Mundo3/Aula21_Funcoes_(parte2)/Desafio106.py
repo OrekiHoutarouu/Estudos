@@ -10,7 +10,7 @@ print('='*50)
 print('Sistema de ajuda PyHelp'.center(50))
 print('='*50)
 while True:
-    comando = str(input('Função ou biblioteca (fim para parar): '))
+    comando = str(input('Função ou biblioteca ("fim" para parar): '))
     
     if comando.upper() == 'FIM':
         break
