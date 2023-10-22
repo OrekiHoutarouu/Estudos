@@ -17,7 +17,19 @@
     <picture>
         <source media="(max-width: 750px)" srcset="imagens/foto_p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png">
-        <img src="imagens/foto_g.png" alt="Foto grande">
+        <img src="imagens/foto_g.png" alt="Foto flexível">
     </picture>
+
+    <h1>Reproduzindo áudio</h1>
+
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast_33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast_33.ogg" type="audio/ogg">
+        <source src="midia/guanacast_33.wav" type="audio/wav">
+
+        <p>Infelizmente, seu navegador não consegue reproduzir áudio <a href="midia/guanacast_33.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
 </body>
 </html>
