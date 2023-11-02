@@ -3,14 +3,14 @@
 
 int main(void)
 {
-    int x = get_int("What's x? ");
-    int y = get_int("What's y? ");
+    int xValue = get_int("What's x? ");
+    int yValue = get_int("What's y? ");
     
-    if (x < y)
+    if (xValue < yValue)
     {
         printf("x is less than y\n");
     }
-    else if (x > y)
+    else if (xValue > yValue)
     {
         printf("x is greater than y\n");
     }
@@ -19,3 +19,4 @@ int main(void)
         printf("x is equal to y");
     }
 }
+
