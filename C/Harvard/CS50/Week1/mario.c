@@ -20,6 +20,7 @@ int get_size(void)
         numberOfBricks = get_int("Size: ");
     } 
     while (numberOfBricks < 1);
+    
     return numberOfBricks;
 }
 
