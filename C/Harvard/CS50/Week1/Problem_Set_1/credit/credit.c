@@ -2,17 +2,26 @@
 #include <stdio.h>
 #include <math.h>
 
-int sumCardNumbers(long long cardNumber)
+int sumAndMultiplyCardNumbers(long long cardNumber)
 {
     int sumOfCardNumbers = 0;
     bool isEveryOtherDigit = false;
+
     while (cardNumber > 0)
     {
         if (isEveryOtherDigit == true)
         {
             int lastEveryOtherDigit = cardNumber % 10;
             int multiply = lastEveryOtherDigit * 2;
-            sumOfCardNumbers += multiply;
+
+            int lastMultipliedDigit = 1;
+            while(lastMultipliedDigit > 0)
+            {
+                lastMultipliedDigit = multiply % 10;
+                sumOfCardNumbers += lastMultipliedDigit;
+                multiply /= 10;
+                lastMultipliedDigit = multiply;
+            }
         }
 
         else
@@ -79,7 +88,7 @@ int getCardFirstDigits(long long cardNumber, int cardNumberLength, int otherCard
 int main(void)
 {
     long long cardNumber = get_long_long("Number: ");
-    int sumOfCardNumbers = sumCardNumbers(cardNumber);
+    int sumOfCardNumbers = sumAndMultiplyCardNumbers(cardNumber);
     int cardNumberLength = getCardNumberLength(cardNumber);
     long long firstCardDigits = getCardFirstDigits(cardNumber, cardNumberLength, 2);
     long long firstCardDigit = getCardFirstDigits(cardNumber, cardNumberLength, 1);
@@ -104,19 +113,11 @@ int main(void)
         else
         {
             printf("INVALID\n");
-            printf("%i\n", sumOfCardNumbers);
-            printf("%i\n", cardNumberLength);
-            printf("%lli\n", firstCardDigits);
-            printf("%lli\n", firstCardDigit);
         }
     }
 
     else
     {
         printf("INVALID\n");
-        printf("%i\n", sumOfCardNumbers);
-        printf("%i\n", cardNumberLength);
-        printf("%lli\n", firstCardDigits);
-        printf("%lli\n", firstCardDigit);
     }
 }
