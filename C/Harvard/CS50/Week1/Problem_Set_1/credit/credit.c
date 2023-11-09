@@ -1,6 +1,6 @@
 #include "libs/cs50.c"
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int sumAndMultiplyCardNumbers(long long cardNumber)
 {
@@ -15,7 +15,7 @@ int sumAndMultiplyCardNumbers(long long cardNumber)
             int multiply = lastEveryOtherDigit * 2;
 
             int lastMultipliedDigit = 1;
-            while(lastMultipliedDigit > 0)
+            while (lastMultipliedDigit > 0)
             {
                 lastMultipliedDigit = multiply % 10;
                 sumOfCardNumbers += lastMultipliedDigit;
