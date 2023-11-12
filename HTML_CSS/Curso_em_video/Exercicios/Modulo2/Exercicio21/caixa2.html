@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Grouping tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #696969;
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+            box-shadow: inset 1px 1px 5px #00000080;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #666666;
+            padding: 3px;
+            box-shadow: 1px 1px 5px #00000080;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: #d3d3d3;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: #a5a5a5;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link Link</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Assunto">
+
+        </section>
+        <section id="Noticias">
+            <article>
+                <h1>Notícia sobre o Brasil</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eligendi quas cum laudantium dolorem, dignissimos accusantium 
+                    non vero sit deserunt ipsa, odit eius eum quo rerum unde animi 
+                    voluptatum accusamus facere.
+                </p>
+
+                <aside>
+                    <p>Artigo escrito por José Almeida</p>
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+            </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo CursoemVídeo</p>
+    </footer>
+</body>
+</html>
