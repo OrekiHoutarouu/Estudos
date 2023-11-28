@@ -7,8 +7,7 @@ typedef struct
 {
     string city;
     int temp;
-}
-avg_temp;
+} avg_temp;
 
 avg_temp temps[NUM_CITIES];
 
