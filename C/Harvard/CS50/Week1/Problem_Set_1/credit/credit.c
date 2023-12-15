@@ -40,6 +40,7 @@ int sumAndMultiplyCardNumbers(long long cardNumber)
 
 bool validateCardNumber(int sumOfCardNumbers)
 {
+    printf("%i", sumOfCardNumbers);
     if (sumOfCardNumbers % 10 == 0)
     {
         return true;
