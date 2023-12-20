@@ -1,0 +1,1 @@
+SELECT movies.title FROM movies INNER JOIN people, stars ON movies.id = stars.movie_id AND people.id = stars.person_id WHERE people.name = "Bradley Cooper" AND movies.title IN (SELECT movies.title FROM movies INNER JOIN people, stars ON movies.id = stars.movie_id AND people.id = stars.person_id WHERE people.name = "Jennifer Lawrence");
