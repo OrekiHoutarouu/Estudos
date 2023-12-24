@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+header nav {
+    box-shadow: 0px 2px 5px #00000090;
+}
+
+header h1 {
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#user_game_placeholder {
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+main ol {
+    background-color: #212529;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 15px;
+    box-shadow: 0px 2px 5px #00000090;
+}
+
+main li {
+    background-color: #818D92;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
+    margin-right: 40px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px #00000090;
+}
+
+main li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main li a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+main h2 {
+    color: #000000;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+main p {
+    font-size: 1.5em;
+    text-align: center
+}
+
+#user_game_description_placeholder {
+    font-size: 1.5em;
+    text-align: center
+}
+
+main form {
+    background-color: #212529;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0px 2px 5px #00000090;
+}
+
+main form label {
+    color: #FFFFFF;
+}
+
+main button {
+    background-color: #818D92 !important;
+    border: 1px solid #818D92 !important;
+    color: #000000 !important;
+    font-weight: bold !important;
+    font-size: 1.5em !important;
+    display: block !important;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px #00000090;
+}
+
+#joystick {
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+#steve {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#terraria_logo {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#brawlhalla_logo {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#call_of_duty_logo {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#dying_light_logo {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (min-width: 1300px) {
+    main ol {
+        font-size: 2em;
+    }
+
+    main form {
+        margin: 15px;
+        font-size: 1.5em;
+    }
+
+    main button {
+        background-color: #818D92 !important;
+        border: 1px solid #818D92 !important;
+        color: #000000 !important;
+        font-weight: bold !important;
+        font-size: 2em !important;
+        display: block !important;
+        margin: auto;
+        margin-bottom: 10px;
+        box-shadow: 0px 2px 5px #00000090;
+    }
+
+    #joystick {
+        width: 15%;
+        display: block;
+        margin: auto;
+    }
+
+    #steve {
+        width: 20%;
+        display: block;
+        margin: auto;
+    }
+
+    #terraria_logo {
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
+
+    #brawlhalla_logo {
+        width: 30%;
+        display: block;
+        margin: auto;
+    }
+
+    #call_of_duty_logo {
+        width: 15%;
+        display: block;
+        margin: auto;
+    }
+
+    #dying_light_logo {
+        width: 25%;
+        display: block;
+        margin: auto;
+    }
+}
