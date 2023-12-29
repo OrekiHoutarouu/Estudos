@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Stocks</th>
+                <th>Shares</th>
+                <th>Current price</th>
+                <th>Total value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for placeholder in placeholders %}
+                <tr>
+                    <td>{{ placeholder["symbol"] }}</td>
+                    <td>{{ placeholder["shares"] }}</td>
+                    <td>{{ placeholder["price"] }}</td>
+                    <td>{{ placeholder["total"] }}</td>
+                </tr>
+                {% endfor %}
+
+        </tbody>
+        <thead>
+            <tr>
+                <th>Current balance</th>
+                <th>Grand Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ placeholders[-1]["balance"] }}</td>
+                <td>{{ placeholders[-1]["grand"] }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
