@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Levels menu
+{% endblock %}
+{% block main %}
+    <h1>1000 Levels with {{ current_letter }} letter words</h1>
+    <h2>Select the level you want to play</h2>
+    <form action="/levels" method="post">
+        <div class="mb-3" id="menu">
+            <select class="form-select" aria-label="Disabled select example" id="level" name="level">
+                <option selected disabled>Level</option>
+                {% for level in levels %}
+                    {% if level > current_level %}
+                        <option class="level">{{level}}</option>
+                    {% else %}
+                        <option>{{level}}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Play CS50 Wordle</button>
+    </form>
+{% endblock %}

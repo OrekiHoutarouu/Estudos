@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Level {{ current_letter }}
+{% endblock %}
+{% block main %}
+    {% if won == 1 %}
+        <h1>{{ 5 - current_row }} attempts left</h1>
+    {% elif won == 2 %}
+        <h1>{{ 5 - current_row }} attempts left</h1>
+        <h2 id="won">YOU WON</h2>
+    {% else %}
+        <h1>{{ 5 - current_row }} attempts left</h1>
+        <h2 id="lost">YOU LOST</h2>
+    {% endif %}
+
+    <form action="/level" method="post">
+        <div class="wordle_letters" name="wordle_letters">
+            {% for letter in range(current_letter) %}
+                {% if status[letter] in "exact" %}
+                    <input autocomplete="off" autofocus maxlength=1 class="exact l{{ letter + 1 }}" name="l{{ letter + 1 }}" placeholder="{{letters[letter]}}" type="text">
+                {% elif status[letter] in "close" %}
+                    <input autocomplete="off" maxlength=1 class="close l{{ letter + 1 }}" name="l{{ letter + 1 }}" placeholder="{{letters[letter]}}" type="text">
+                {% elif status[letter] in "wrong" %}
+                    <input autocomplete="off" maxlength=1 class="wrong l{{ letter + 1 }}" name="l{{ letter + 1 }}" placeholder="{{letters[letter]}}" type="text">
+                {% elif status[letter] in " " %}
+                    <input autocomplete="off" maxlength=1 class="l{{ letter + 1 }}" name="l{{ letter + 1 }}" type="text">
+                {% endif %}
+            {% endfor %}
+        </div>
+        <button class="btn btn-primary" type="submit">Enter</button>
+    </form>
+{% endblock %}

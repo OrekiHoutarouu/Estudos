@@ -1,0 +1,93 @@
+main h1 {
+    font-size: 1.2em;
+}
+
+.pre-index {
+    margin-bottom: 20px;
+}
+
+.level {
+    background-color: #842029;
+}
+
+#menu {
+    margin: auto;
+    margin-top: 30px;
+    width: 320px;
+}
+
+.l1 {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+}
+
+.l2 {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+}
+
+.l3 {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+}
+
+.l4 {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+}
+
+.l5 {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+}
+
+.l6 {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+}
+
+.l7 {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+}
+
+.l8 {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 30px;
+}
+
+.exact {
+    background-color: #79B852;
+}
+
+.close {
+    background-color: #F3C237;
+}
+
+.wrong {
+    background-color: #A4AEC4;
+}
+
+#won {
+    color: #79B852;
+}
+
+#lost {
+    color: #842029;
+}

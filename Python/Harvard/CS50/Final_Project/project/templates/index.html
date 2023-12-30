@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Menu
+{% endblock %}
+
+{% block main %}
+    <h1>Select the number of letters in the word</h1>
+    <form action="/" method="post">
+        <div class="mb-3" id="menu">
+            <select class="form-select" aria-label="Disabled select example" id="letters" name="letters">
+                <option selected disabled>Number of Letters</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Choose Number of Letters</button>
+    </form>
+{% endblock %}
