@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function calculo_idade() {
+            let ano_atual = new Date().getFullYear()
+            iidade.innerHTML = Number(ano_atual) - Number(iano.value)
+        }
+    </script>
+    
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="get">
+        <p>
+           <label for="iano">Data de nascimento: </label>
+           <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calculo_idade()">
+        </p>
+
+        <p>
+            <label for="iidade">Idade: </label>
+            <output id="iidade">0</output>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
