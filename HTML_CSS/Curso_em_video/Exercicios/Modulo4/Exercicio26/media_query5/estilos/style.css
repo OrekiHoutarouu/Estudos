@@ -19,6 +19,20 @@ h1 {
     text-align: center;
 }
 
+span {
+    background-color: #424242;
+    color: #ffffff;
+    display: block !important; 
+    text-align: center;
+    padding: 10px;
+}
+
+span:hover {
+    background-color: #ffffff;
+    color: #424242;
+    cursor: pointer;
+}
+
 menu {
     display: block;
 }

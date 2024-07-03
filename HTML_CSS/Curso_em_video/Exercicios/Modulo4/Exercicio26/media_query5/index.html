@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+
+    <script>
+        function click_menu() {
+            if (itens_menu.style.display == "block") {
+                itens_menu.style.display = "none"
+            } 
+            
+            else {
+                itens_menu.style.display = "block"
+            }
+        }
+    </script>
     
     <title>Media Query</title>
 </head>
@@ -11,7 +24,10 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+
+        <span class="material-icons" onclick="click_menu()">menu</span>
+
+        <menu id="itens_menu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
