@@ -19,23 +19,24 @@
         float: right;
         width: 55%;
     }
+
 }
 
 @media screen and (min-width: 992px) {
     body {
         background-image: var(--gradiente_background)
     }
-
+    
     section#login {
         width: 892px;
     }
-
+    
     div#imagem {
         float: right;
         width: 45%;
         height: 100%;
     }
-
+    
     #formulario {
         float: left;
         width: 55%;
