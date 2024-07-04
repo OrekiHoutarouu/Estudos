@@ -31,13 +31,13 @@
     }
 
     div#imagem {
-        float: left;
+        float: right;
         width: 45%;
         height: 100%;
     }
 
     #formulario {
-        float: right;
+        float: left;
         width: 55%;
     }
 }
