@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 :root { 
-    --cor_primaria: #cf9c97;
-    --cor_secundaria: #cf7353;
+    --cor_primaria: #cf7353;
+    --cor_secundaria: #cf9c97;
+    --gradiente_background: linear-gradient(to top, var(--cor_primaria), var(--cor_secundaria));
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 body, html {
-    background-color: var(--cor_secundaria);
+    background-color: var(--cor_primaria);
     height: 100vh;
     width: 100vw;
 }
@@ -36,6 +37,8 @@ main {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #00000080;
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 
 #imagem {
