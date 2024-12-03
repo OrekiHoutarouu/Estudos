@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        #resultado {
+            margin-top: 20px;
+        }
+    </style>
+    
+    <title>DETRAN</title>
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+
+    <form method="get">
+        <label for="velocidade">Velocidade do carro</label>
+        <input type="number" name="velocidade" id="velocidade">
+
+        <input type="button" value="Verificar" name="verificar" id="verificar" onclick="calcular()">
+    </form>
+
+    <div id="resultado">Resultado: </div>
+
+    <script>
+        function calcular() {
+            var velocidade = Number((document.getElementById("velocidade")).value)
+            var resultado = document.getElementById("resultado")
+
+            if (velocidade > 60) {
+                resultado.innerHTML = `Seu carro está a ${velocidade}km/h, e ultrapassou a velocidade limite. Multado!`
+            } else {
+                resultado.innerHTML = `Seu carro está a ${velocidade}km/h, e não ultrapassou a velocidade limite.`
+            }
+        }
+    </script>
+</body>
+</html>
