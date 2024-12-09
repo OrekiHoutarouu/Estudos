@@ -1,20 +1,29 @@
 body {
-    background: rgb(105, 105, 255);
     font: normal 15pt Arial;
 }
 
 header {
-    color: white;
+    color: #ffffff;
     text-align: center;
 }
 
 section {
     background: #ffffff;
-    border-radius: 10px;
     padding: 15px;
-    width: 500px;
     margin: auto;
+    width: 500px;
+    border-radius: 10px;
     box-shadow: 1px 1px 10px #00000080;
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+#imagem {
+    border-radius: 50%;
+    width: 300px;
 }
 
 footer {
