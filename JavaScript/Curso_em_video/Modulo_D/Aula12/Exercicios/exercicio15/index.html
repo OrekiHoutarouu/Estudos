@@ -6,21 +6,40 @@
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js"></script>
     
-    <title></title>
+    <title>Verificador de idade</title>
 </head>
 
 <body>
     <header>
-        <h1></h1>
+        <h1>Verificador de idade</h1>
     </header>
 
     <section>
         <div>
-            Testando
+            <form action="" method="get">
+                <p>
+                    <label for="ano_nascimento">Ano de nascimento:</label>
+                    <input id="ano_nascimento" name="ano_nascimento" type="number">
+                </p>
+
+                <p> 
+                    Sexo:
+
+                    <input type="radio" name="sexo" id="masculino" checked>
+                    <label for="masculino">Masculino</label>
+
+                    <input type="radio" name="sexo" id="feminino">
+                    <label for="feminino">Feminino</label>
+                </p>
+
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar()">
+                </p>
+            </form>
         </div>
 
-        <div>
-            Testando
+        <div id="resultado">
+            <p>Preencha os campos acima para ver o resultado!</p>
         </div>
     </section>
 
