@@ -15,47 +15,29 @@ function verificar() {
         if (document.getElementsByName("sexo")[0].checked) {
             sexo = "Homem"
 
-            switch(idade) {
-                case idade <= 12:
-                    imagem.setAttribute("src", "imagens/bebe_homem.jpg")
-                    break
-
-                case idade >= 13 && idade <= 21:
-                    imagem.setAttribute("src", "imagens/jovem_homem.jpg")
-                    break
-                
-                case idade >= 22 && idade <= 59:
-                    imagem.setAttribute("src", "imagens/adulto_homem.jpg")
-                    break
-                
-                case idade >= 60:
-                    imagem.setAttribute("src", "imagens/idoso_homem.jpg")
-                    break
+            if (idade <= 12) {
+                imagem.setAttribute("src", "imagens/bebe_homem.jpg")
+            } else if (idade >= 13 && idade <= 21) {
+                imagem.setAttribute("src", "imagens/jovem_homem.jpg")
+            } else if (idade >= 22 && idade <= 59) {
+                imagem.setAttribute("src", "imagens/adulto_homem.jpg")
+            } else {
+                imagem.setAttribute("src", "imagens/idoso_homem.jpg")
             }
         } else {
             sexo = "Mulher"
 
-            switch(idade) {
-                case idade <= 12:
-                    imagem.setAttribute("src", "imagens/bebe_mulher.jpg")
-                    break
-
-                case idade >= 13 && idade <= 21:
-                    imagem.setAttribute("src", "imagens/jovem_mulher.jpg")
-                    break
-                
-                case idade >= 22 && idade <= 59:
-                    imagem.setAttribute("src", "imagens/adulta_mulher.jpg")
-                    break
-                
-                case idade >= 60:
-                    imagem.setAttribute("src", "imagens/idosa_mulher.jpg")
-                    break
+            if (idade <= 12) {
+                imagem.setAttribute("src", "imagens/bebe_mulher.jpg")
+            } else if (idade >= 13 && idade <= 21) {
+                imagem.setAttribute("src", "imagens/jovem_mulher.jpg")
+            } else if (idade >= 22 && idade <= 59) {
+                imagem.setAttribute("src", "imagens/adulta_mulher.jpg")
+            } else {
+                imagem.setAttribute("src", "imagens/idosa_mulher.jpg")
             }
         }
-
         resultado.innerText = `Detectamos ${sexo} com ${idade} anos.`
         resultado.appendChild(imagem)
     }
-
 }
