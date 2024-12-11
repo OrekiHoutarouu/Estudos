@@ -6,21 +6,40 @@
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js"></script>
     
-    <title></title>
+    <title>Super Contador</title>
 </head>
 
 <body>
     <header>
-        <h1></h1>
+        <h1>Vamos contar</h1>
     </header>
 
     <section>
-        <div>
-            Testando
+        <div id="dados">
+            <form action="">
+                <p>
+                    <label for="inicio">Início: </label>
+                    <input type="number" name="inicio" id="inicio">
+                </p>
+
+                <p>
+                    <label for="fim">Fim: </label>
+                    <input type="number" name="fim" id="fim">
+                </p>
+
+                <p>
+                    <label for="passo">Passo: </label>
+                    <input type="number" name="passo" id="passo">
+                </p>
+
+                <p>
+                    <input type="button" value="Contar" onclick="contar()">
+                </p>
+            </form>
         </div>
 
-        <div>
-            <img id="" src="" alt="">
+        <div id="resultado">
+            Preparando a contagem...
         </div>
     </section>
 
