@@ -8,10 +8,6 @@ while (contador < 6) {
 contador = 1
 
 do {
-    console.log(`Tudo ${contador}`)
+    console.log(`Tudo bem? ${contador}`)
     contador++
 } while (contador < 6)
-
-for (var contador2 = 1; contador2 < 6; contador2++) {
-    console.log(`Bem? ${contador2}`)
-}
