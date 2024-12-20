@@ -1,0 +1,30 @@
+body {
+    background: #3296ff;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: #ffffff;
+    text-align: center;
+}
+
+section {
+    background: #ffffff;
+    padding: 15px;
+    margin: auto;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #00000080;
+}
+
+#lista {
+    width: 150px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+}
