@@ -1,4 +1,5 @@
-<h1>Estudos</h1>
-<p>Repositório para guardar arquivos de estudo e treino das linguagens</p>
+# Estudos
 
-<p>Obs: Escrito em minha língua materna (Português) por ser um repositório pessoal, facilitando o acesso às informações para mim mesmo</p>
+Repositório para guardar arquivos de estudo e treino das linguagens.
+
+*Ps: Written in my mother language (Portuguese) for being a personal repository, making easy the information access for myself*
