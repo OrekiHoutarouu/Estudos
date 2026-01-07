@@ -1,2 +1,4 @@
-C/Harvard/CS50/**/*.c linguist-vendored
-C/Harvard/CS50/**/*.h linguist-vendored
+C/Harvard/CS50/**/libs/** linguist-vendored
+C/Harvard/CS50/**/cs50.h linguist-vendored
+C/Harvard/CS50/**/output/** linguist-vendored
+C/Harvard/CS50/**/*.exe linguist-vendored
