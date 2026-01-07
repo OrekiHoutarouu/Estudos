@@ -1,5 +1,2 @@
-*.c linguist-vendored
-*.h linguist-vendored
-
-C/**/*.c linguist-vendored=false
-C/**/*.h linguist-vendored=false
+C/Harvard/CS50/**/*.c linguist-vendored
+C/Harvard/CS50/**/*.h linguist-vendored
