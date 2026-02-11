@@ -1,11 +1,12 @@
 .container {
     background-color: salmon;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .item {
     background-color: aqua;
     border: 1px solid black;
     text-align: center;
+    flex: auto
 }
