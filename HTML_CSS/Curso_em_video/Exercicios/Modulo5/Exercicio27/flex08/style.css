@@ -1,0 +1,20 @@
+.container {
+    background-color: salmon;
+    display: flex;
+    height: 400px;
+}
+
+.item {
+    background-color: aqua;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+}
+
+#D {
+    align-self: center;
+}
+
+#A {
+    align-self: flex-end;
+}
