@@ -1,0 +1,11 @@
+.container {
+    background-color: salmon;
+    display: flex;
+}
+
+.item {
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
