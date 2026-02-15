@@ -1,0 +1,23 @@
+.container {
+    background-color: salmon;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.item {
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#A {
+    flex: 0 1 300px
+}
+
+#B {
+    flex: 1 2 300px
+}
+
+#C {
+    flex: 2 1 300px
+}
