@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 
 mongoose.connect(process.env.CONNECTIONSTRING)
     .then(() => {
-        app.emit("Pronto")
+        app.emit("Ready")
     })
     .catch(e => console.log(e))
 
@@ -16,11 +16,12 @@ const routes = require("./routes")
 const path = require("path")
 const helmet = require("helmet")
 const csrf = require("csurf")
-const { middleware_global, check_csrf_error, csrf_middleware } = require("./src/middlewares/middleware.js")
-
+const { global_middleware, check_csrf_error, csrf_middleware } = require("./src/middlewares/middleware.js")
 
 app.use(helmet())
+
 app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 app.use(express.static(path.resolve(__dirname, "public")))
 
 const mongo_store = MongoStore.create({
@@ -41,17 +42,19 @@ const session_options = session({
 
 app.use(session_options)
 app.use(flash())
+
 app.set("views", path.resolve(__dirname, "src", "views"))
 app.set("view engine", "ejs")
+
 app.use(csrf())
-app.use(middleware_global)
+
+app.use(global_middleware)
 app.use(check_csrf_error)
 app.use(csrf_middleware)
 app.use(routes)
 
-app.on("Pronto", () => {
+app.on("Ready", () => {
     app.listen(3000, () => {
-        console.log("Servidor executando na porta 3000")
-        console.log("http://localhost:3000/")
+        console.log("Server running on http://localhost:3000/")
     })
 })

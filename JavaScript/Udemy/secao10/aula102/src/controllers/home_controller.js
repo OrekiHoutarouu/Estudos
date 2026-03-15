@@ -1,10 +1,10 @@
-exports.get_home = (requisicao, resposta) => {
-    resposta.render("../views/index.ejs", {
-        titulo: "Título da home",
+exports.get_home = (request, answer) => {
+    answer.render("../views/index.ejs", {
+        title: "Home title",
     })
 }
 
-exports.post_home = (requisicao, resposta) => {
-    resposta.send(requisicao.body)
+exports.post_home = (request, answer) => {
+    answer.send(request.body)
 }
 
